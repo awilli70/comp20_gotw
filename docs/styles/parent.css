@@ -3,9 +3,14 @@
   src: url('Inter-Medium.woff') format('woff');
 }
 
+  body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .parent {
     display: grid;
-    grid-template: auto 1fr auto / 7em auto 7em;
+    grid-template: auto 1fr auto / 10% auto 10%;
   }
   
   header {
@@ -21,6 +26,22 @@
 
   main {
     grid-column: 2 / 3;
+  }
+
+  main .content {
+    padding-left: 1em;
+    border-radius: 1em;
+    border: 2px rgb(174, 224, 255);
+    border-style: solid;
+    box-shadow: 3px 3px rgb(217, 240, 255);
+    object-fit: contain;
+    margin-top: .5em;
+  }
+
+  .content img {
+    max-width: 70vw;
+    max-height: 40vh;
+    padding-right: 1em;
   }
 
   .right-side {
